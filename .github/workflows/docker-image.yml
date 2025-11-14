@@ -1,19 +1,15 @@
-name: Docker Image CI
+name: CI/CD Pipeline
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches: [ main ]
 
 jobs:
-
-  build:
-
+  build-and-push:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
+      - name: Checkout
         uses: actions/checkout@v3
 
       - name: Setup Node
@@ -37,3 +33,4 @@ jobs:
 
       - name: Push image
         run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/nodejs-demo-app:latest
+DOCKERHUB_USERNAME }}/nodejs-demo-app:latest
