@@ -1,8 +1,31 @@
 Automating CI/CD Deployment Using Jenkins Pipeline
-DevOps Internship – Task 2
+DevOps Internship – Task 2 & 5
+
+
 
 This repository contains the implementation of Task 2, where I built and automated a complete CI/CD pipeline using Jenkins, integrated with Docker, GitHub, and DockerHub.
 The pipeline automatically builds, tests, dockerizes, and pushes the application image to DockerHub whenever new changes are committed.
+
+# Task 5 — Kubernetes Deployment (Minikube)
+
+This task deploys a Node.js application to a local Kubernetes cluster using Minikube.
+Files included:
+- deployment.yaml
+- service.yaml
+- screenshots of cluster, pods, services, scaling, describe output
+
+Steps:
+1. Started Minikube with Docker driver
+2. Applied deployment.yaml and service.yaml
+3. Verified pods and services
+4. Accessed app using NodePort
+5. Scaled deployment to multiple replicas
+6. Described pod for logs/debugging
+
+This completes Task 5.
+
+
+
 
 📌 Objective
 
